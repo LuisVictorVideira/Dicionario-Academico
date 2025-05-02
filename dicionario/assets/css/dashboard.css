@@ -1,0 +1,218 @@
+body {
+    background-color: #fff0f3;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+.container {
+    max-width: 70%;
+    margin: 0 auto;
+    background-color: #ffe6eb;
+    border: 2px solid #ff4d6d;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 0 15px rgba(255, 77, 109, 0.2);
+}
+
+h1 {
+    color: #cc0033;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.logout-btn {
+    display: inline-block;
+    background-color: #ff4d6d;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-bottom: 20px;
+    transition: background-color 0.3s;
+}
+
+.logout-btn:hover {
+    background-color: #e6003c;
+}
+
+.busca-container {
+    background-color:rgb(250, 209, 220);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.busca-container input, .busca-container select {
+    flex: 1;
+    min-width: 200px;
+    padding: 10px;
+    border: 1px solid #ffccd5;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.busca-container button {
+    background-color: #ff4d6d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.busca-container button:hover {
+    background-color: #e6003c;
+}
+
+
+
+.add-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    margin-left: 10px;
+}
+
+.add-disciplina-btn {
+    background-color: #2196F3;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    margin-left: 10px;
+}
+
+.limpar-busca {
+    position: absolute;
+    right: 110px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #999;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 0 10px;
+    line-height: 1;
+    z-index: 2;
+}
+
+
+.limpar-busca:hover {
+    color: #ff4d6d;
+}
+
+form[method="GET"] {
+    position: relative;
+}
+
+form[method="GET"] input[type="text"] {
+    padding-right: 40px;
+    width: 100%;
+}
+.add-btn:hover {
+    background-color: #3e8e41;
+}
+
+.add-disciplina-btn:hover {
+    background-color: #0b7dda;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+th {
+    background-color: #ff4d6d;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+td {
+    padding: 10px 12px;
+    border-bottom: 1px solid #ffccd5;
+}
+
+tr:nth-child(even) {
+    background-color: #fff9fa;
+}
+
+tr:hover {
+    background-color: #ffecf1;
+}
+
+.acoes a {
+    margin-right: 10px;
+    color: #ff4d6d;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.acoes a:hover {
+    color: #e6003c;
+    text-decoration: underline;
+}
+
+.null-value {
+    color: #999;
+    font-style: italic;
+}
+
+.contexto {
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.paginacao {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 20px;
+}
+
+.paginacao a, .paginacao span {
+    padding: 8px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.paginacao a {
+    background-color: #ff4d6d;
+    color: white;
+}
+
+.paginacao a:hover {
+    background-color: #e6003c;
+}
+
+.paginacao span {
+    background-color: #ffccd5;
+    color: #333;
+}
+
+.acoes-container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,131 @@
+body {
+    background-color: #fff0f3;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+}
+
+.container {
+    width: 30%; 
+    max-height: 90%; 
+    background-color: #ffe6eb;
+    border: 2px solid #ff4d6d;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 0 15px rgba(255, 77, 109, 0.2);
+    overflow-y: auto; 
+}
+
+h1 {
+    color: #cc0033;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.back-btn {
+    display: inline-block;
+    background-color: #ff4d6d;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-bottom: 20px;
+    transition: background-color 0.3s;
+}
+
+.back-btn:hover {
+    background-color: #e6003c;
+}
+
+.edit-form {
+    background-color: #ffecf1;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #cc0033;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ffccd5;
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.form-group textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.required-field::after {
+    content: " *";
+    color: #ff4d6d;
+}
+
+.submit-btn {
+    background-color: #ff4d6d;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    display: block;
+    margin: 25px auto 0;
+}
+
+.submit-btn:hover {
+    background-color: #e6003c;
+}
+
+.mensagem {
+    padding: 15px;
+    border-radius: 6px;
+    margin: 20px 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+.erro {
+    background-color: #ffebee;
+    color: #b30000;
+    border: 1px solid #ffcdd2;
+}
+
+.sucesso {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    border: 1px solid #c8e6c9;
+}
+
+.add-disciplina-link {
+    display: block;
+    text-align: right;
+    margin-top: 5px;
+    font-size: 14px;
+    color: #2196F3;
+    text-decoration: none;
+}
+
+.add-disciplina-link:hover {
+    text-decoration: underline;
+}

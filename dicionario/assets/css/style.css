@@ -1,0 +1,94 @@
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #f0faff;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+/* Main cresce para ocupar espaço restante */
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+
+footer {
+    background-color: #3399ff;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    margin-top: 40px;
+}
+
+header {background-color: #3399ff;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+
+/* Layout para as palavras */
+
+.grade-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    box-sizing: border-box;
+    min-height: calc(80vh - 160px); 
+}
+
+.grade-palavras {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 4 por linha */
+    grid-auto-rows: auto;
+    gap: 15px;
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    border: 2px solid #3399ff;
+    border-radius: 16px;
+    box-sizing: border-box;
+}
+
+.grade-palavras li {
+    list-style: none;
+    background-color: #e0f0ff;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+
+.grade-palavras li:hover {
+    background-color: #d0e8ff;
+}
+
+/* Navegação de páginas */
+.paginacao {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.paginacao a {
+    margin: 0 6px;
+    text-decoration: none;
+    color: #0077cc;
+}
+
+.paginacao a.active {
+    font-weight: bold;
+    text-decoration: underline;
+    color: #004499;
+}
