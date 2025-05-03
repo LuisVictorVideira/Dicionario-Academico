@@ -12,7 +12,12 @@ if (!isset($_GET['id']) || !is_numeric($_GET['id'])) {
 $id = (int) $_GET['id'];
 
 // Consulta a palavra pelo ID
-$stmt = $pdo->prepare("SELECT * FROM DICIONARIO WHERE ID = :id");
+$stmt = $pdo->prepare("
+    SELECT d.PALAVRA, d.SIGNIFICADO, d.CONTEXTO, dis.DISCIPLINA 
+    FROM DICIONARIO d
+    LEFT JOIN DISCIPLINA dis ON d.ID_DISCIPLINA = dis.ID
+    WHERE d.ID = :id
+");
 $stmt->bindParam(':id', $id, PDO::PARAM_INT);
 $stmt->execute();
 $palavra = $stmt->fetch(PDO::FETCH_ASSOC);

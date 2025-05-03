@@ -38,26 +38,68 @@ h1 {
 }
 
 .busca-container {
-    background-color:rgb(250, 209, 220);
-    padding: 20px;
-    border-radius: 8px;
-    margin-bottom: 20px;
+    position: relative; /* Define o contexto para o botão limpar */
     display: flex;
     gap: 10px;
     align-items: center;
     flex-wrap: wrap;
+    background-color: rgb(250, 209, 220);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
 }
 
-.busca-container input, .busca-container select {
+.busca-container form {
     flex: 1;
-    min-width: 200px;
-    padding: 10px;
+    display: flex;
+    gap: 10px;
+    position: relative;
+    align-items: center;
+}
+
+.busca-container input[type="text"] {
+    flex: 2;
+    min-width: 300px;
+    padding: 10px 15px;
     border: 1px solid #ffccd5;
     border-radius: 6px;
     font-size: 16px;
+    background-color: white;
+    transition: border-color 0.3s;
+    padding-right: 40px; /* Espaço suficiente para o botão limpar */
+    position: relative; /* Necessário para o botão limpar */
 }
 
-.busca-container button {
+.busca-container input[type="text"]:focus {
+    outline: none;
+    border-color: #ff4d6d;
+    box-shadow: 0 0 0 2px rgba(255, 77, 109, 0.2);
+}
+
+.busca-container select {
+    min-width: 180px;
+    padding: 10px 15px;
+    border: 1px solid #ffccd5;
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: white;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23ff4d6d'%3e%3cpath d='M7 10l5 5 5-5z'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 20px;
+}
+
+.busca-container select:focus {
+    outline: none;
+    border-color: #ff4d6d;
+    box-shadow: 0 0 0 2px rgba(255, 77, 109, 0.2);
+}
+
+.busca-container button[type="submit"] {
     background-color: #ff4d6d;
     color: white;
     padding: 10px 20px;
@@ -66,13 +108,12 @@ h1 {
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s;
+    white-space: nowrap;
 }
 
-.busca-container button:hover {
+.busca-container button[type="submit"]:hover {
     background-color: #e6003c;
 }
-
-
 
 .add-btn {
     background-color: #4CAF50;
@@ -96,23 +137,23 @@ h1 {
 
 .limpar-busca {
     position: absolute;
-    right: 110px;
-    top: 50%;
-    transform: translateY(-50%);
+    right: 15px; 
+    transform: translateX(-2450%);
     background: none;
     border: none;
     color: #999;
     font-size: 20px;
     cursor: pointer;
-    padding: 0 10px;
+    padding: 0;
     line-height: 1;
-    z-index: 2;
+    transition: color 0.3s;
 }
-
 
 .limpar-busca:hover {
     color: #ff4d6d;
 }
+
+
 
 form[method="GET"] {
     position: relative;
