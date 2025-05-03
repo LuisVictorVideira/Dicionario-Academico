@@ -30,7 +30,7 @@ Este é um projeto de um dicionário de termos acadêmicos. Ele permite que usu�
 
 1. **Clone o repositório**:
    ```bash
-   git clone https://github.com/luisvictorvideira/dicionario
+   git clone https://github.com/luisvictorvideira/dicionario-academico
    cd dicionario-academico
 
 2. Configure o banco de dados automaticamente:
