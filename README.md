@@ -8,12 +8,21 @@ Este é um projeto de um dicionário de termos acadêmicos. Ele permite que usu�
 - Pesquisar palavras e seus significados.
 - Navegar por uma lista de palavras organizadas.
 
+![image](https://github.com/user-attachments/assets/26fe702d-e747-4d00-a0e9-c7335083463b)
+
+
+
 ### Administradores
 - Adicionar novas palavras ao dicionário.
 - Editar palavras existentes.
 - Excluir palavras.
 - Organizar palavras por disciplinas.
 - Gerenciar disciplinas (adicionar, editar e remover).
+![image](https://github.com/user-attachments/assets/16db81ec-aa81-4774-9d87-84ddeeb71d3f)
+
+![image](https://github.com/user-attachments/assets/895ee1f1-f1cb-4712-938a-58b8ad01fa26)
+
+
 
 ## Tecnologias Utilizadas
 - **PHP**: Para o backend.
