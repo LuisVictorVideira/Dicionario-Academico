@@ -86,5 +86,5 @@ dicionario/
 │   ├── footer.php       # Rodapé
 │   ├── index.php        # Página inicial
 │   ├── palavra.php      # Página de detalhes da palavra
-└── database.sql         # (Opcional) Script SQL para criar o banco manualmente
+
 ```
